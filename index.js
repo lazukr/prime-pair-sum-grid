@@ -136,12 +136,6 @@ function render(grid, highlights) {
 
 			if (highlights[`${i},${j}`]) {
 				div.style.backgroundColor = "red";
-			} else if ((i + j) % 4 === 0) {
-				div.style.backgroundColor = "lightblue";
-			} else if ((i + j) % 2 === 0) {
-				div.style.backgroundColor = "cyan";
-			} else if ((i + j) % 4 === 1) {
-				div.style.backgroundColor = "orange";
 			}
 
 			td.appendChild(div);
